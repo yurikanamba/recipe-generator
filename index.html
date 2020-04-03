@@ -4,17 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Recipe Generator</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;300;500;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="class">
-      <div>
-        <h3>Feeling Hungry?</h3>
+    <div class="container">
+      <div class="header">
+        <h1>Feeling Hungry?</h1>
         <h5>Get a random meal by clicking below</h5>
 
-        <button id="get_meal">Get Meal</button>
+        <button href="#meal-section" id="get_meal">Get Meal🍕</button>
       </div>
-      <div id="meal" class="row meal"></div>
+
+      <section id="meal-section" class="row meal"></section>
     </div>
 
     <script type="text/javascript" src="script.js"></script>

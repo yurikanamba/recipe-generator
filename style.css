@@ -1,0 +1,126 @@
+k* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto Mono", sans-serif;
+  margin: 0;
+  background-color: #fffb96;
+}
+
+.container {
+}
+
+/* header */
+.header {
+  background-color: #fffb96;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+
+h1 {
+  text-align: center;
+  margin: 0;
+  font-size: 5em;
+}
+
+h5 {
+  font-size: 1.2em;
+  text-align: center;
+  margin: 40px;
+}
+
+#get_meal {
+  font-family: "Roboto Mono", sans-serif;
+  border: none;
+  margin-bottom: 30px;
+  padding: 20px 50px;
+  background-color: #05ffa1;
+  font-size: 1.5em;
+  border-radius: 20px;
+}
+
+#get_meal:active {
+  transform: scale(0.98);
+}
+
+#get_meal:focus {
+  outline: 0;
+}
+
+/* recipe */
+#meal-section {
+  background-color: #01cdfe;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#recipe_title {
+  text-align: center;
+  margin: 50px 20px 10px 20px;
+  font-size: 3em;
+}
+
+.tag-container {
+  width: 80vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tag {
+  margin: 3px;
+  background-color: #ff71ce;
+  padding: 10px;
+  display: flex-left;
+  font-size: 0.8em;
+}
+
+/*
+BIGGER THAN MOBILE
+
+.ImgIngCont {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 40px;
+}
+
+img {
+  width: 50vw;
+}
+*/
+
+img {
+  width: 100vw;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.recipe-ingredients {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h3 {
+  margin: 0;
+  font-size: 1.5em;
+}
+
+#recipe_video {
+  margin: 40px;
+  width: 100vw;
+  height: 45vh;
+}
+
+#recipe_instructions {
+  margin: 20px 40px 50px 40px;
+}
