@@ -10,7 +10,6 @@ function getRecipe() {
     .then(res => res.json())
     .then(res => {
       const newRecipe = res.meals[0];
-      console.log(newRecipe);
       generateRecipe(newRecipe);
     });
 }
@@ -86,5 +85,7 @@ function generateRecipe(newRecipe) {
   recipeInstructionEl.innerText = newRecipe.strInstructions;
   mealContainer.appendChild(instructionsHeader);
   mealContainer.appendChild(recipeInstructionEl);
+
+  //scroll to bottom of page
+  window.scrollTo(0, document.querySelector(".header").scrollHeight);
 }
-//   let recipeSource = newRecipe.meals[0].strSource;

@@ -1,14 +1,15 @@
-k* {
+* {
   box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   font-family: "Roboto Mono", sans-serif;
   margin: 0;
   background-color: #fffb96;
-}
-
-.container {
 }
 
 /* header */
@@ -19,6 +20,7 @@ body {
   align-items: center;
   justify-content: center;
   padding: 40px;
+  height: 100vh;
 }
 
 h1 {
@@ -33,6 +35,7 @@ h5 {
   margin: 40px;
 }
 
+/*button*/
 #get_meal {
   font-family: "Roboto Mono", sans-serif;
   border: none;
@@ -41,6 +44,8 @@ h5 {
   background-color: #05ffa1;
   font-size: 1.5em;
   border-radius: 20px;
+  text-decoration: none;
+  color: black;
 }
 
 #get_meal:active {
