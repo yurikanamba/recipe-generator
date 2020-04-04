@@ -115,12 +115,41 @@ h3 {
   font-size: 1.5em;
 }
 
-#recipe_video {
-  margin: 40px;
-  width: 100vw;
-  height: 45vh;
+.videoWrapper {
+  position: relative;
+  margin: 40px 0;
+  padding-bottom: 56.25%; /*16:9*/
+  width: 100%;
+  height: 0;
+}
+
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 #recipe_instructions {
   margin: 20px 40px 50px 40px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up)*/
+@media only screen and (min-width: 600px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up)
+@media only screen and (min-width: 992px) {...}*/
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
 }

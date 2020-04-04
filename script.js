@@ -64,15 +64,19 @@ function generateRecipe(newRecipe) {
   mealContainer.appendChild(recipeImgIngContEl);
 
   //video
+  const recipeVideoWrapper = document.createElement("div");
   const recipeVideoEl = document.createElement("iframe");
-  recipeVideoEl.id = "recipe_video";
+  recipeVideoWrapper.classList.add("videoWrapper");
   recipeVideoEl.src = `https://youtube.com/embed/${newRecipe.strYoutube.slice(
     -11
   )}`;
   recipeVideoEl.frameborder = "0";
   recipeVideoEl.allow =
     "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture";
-  mealContainer.appendChild(recipeVideoEl);
+  recipeVideoWrapper.width = "560";
+  recipeVideoWrapper.height = "349";
+  recipeVideoWrapper.appendChild(recipeVideoEl);
+  mealContainer.appendChild(recipeVideoWrapper);
 
   //instructions
   const instructionsHeader = document.createElement("h3");
