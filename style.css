@@ -81,22 +81,6 @@ h5 {
   font-size: 0.8em;
 }
 
-/*
-BIGGER THAN MOBILE
-
-.ImgIngCont {
-  width: 100vw;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  margin: 40px;
-}
-
-img {
-  width: 50vw;
-}
-*/
-
 img {
   width: 100vw;
   margin-top: 20px;
@@ -135,21 +119,17 @@ h3 {
   margin: 20px 40px 50px 40px;
 }
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-}
-
-/* Small devices (portrait tablets and large phones, 600px and up)*/
-@media only screen and (min-width: 600px) {
-}
-
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-}
+  .ImgIngCont {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 40px;
+  }
 
-/* Large devices (laptops/desktops, 992px and up)
-@media only screen and (min-width: 992px) {...}*/
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
+  img {
+    width: 50vw;
+  }
 }
