@@ -86,6 +86,13 @@ function generateRecipe(newRecipe) {
   mealContainer.appendChild(instructionsHeader);
   mealContainer.appendChild(recipeInstructionEl);
 
+  //source
+  const recipeSourceEl = document.createElement("a");
+  recipeSourceEl.id = "recipe_source";
+  recipeSourceEl.href = newRecipe.strSource;
+  recipeSourceEl.innerHTML = "Shoutout to the recipe source";
+  mealContainer.appendChild(recipeSourceEl);
+
   //scroll to bottom of page
   window.scrollTo(0, document.querySelector(".header").scrollHeight);
 }

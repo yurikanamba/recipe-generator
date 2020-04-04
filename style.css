@@ -125,6 +125,20 @@ h3 {
   margin: 20px 40px 50px 40px;
 }
 
+#recipe_source {
+  background-color: #fffb96;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+#recipe_source:hover {
+  transform: scale(0.98);
+}
+
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   .ImgIngCont {
